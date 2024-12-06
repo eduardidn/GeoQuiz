@@ -1,0 +1,34 @@
+start program
+
+display "Welcome to GeoQuiz!"
+display "Test your knowledge of world capitals."
+display "Rules: You have 3 chances to guess correctly. Let's start!"
+
+set max_tries to 3
+set current_score to 0
+set remaining_tries to max_tries
+
+while remaining_tries > 0:
+    select a random country from the database
+    display the name of the selected country
+    ask "What is the capital of [selected country]?"
+    
+    read user_input
+
+    if user_input matches the capital of the selected country:
+        display "Correct! Good job!"
+        increment current_score by 1
+    else:
+        display "Incorrect! Try again."
+        decrement remaining_tries by 1
+
+    display "Current Score: [current_score]"
+    display "Remaining Tries: [remaining_tries]"
+
+end while
+
+display "Game Over!"
+display "Final Score: [current_score]"
+display "Thank you for playing GeoQuiz!"
+
+end program
