@@ -1,16 +1,14 @@
-# Project Name: Planner
+# Project Name: GeoQuiz
 
 ## Description
 
-The Planner is a versatile tool designed to schedule and manage events efficiently. It offers a user-friendly interface and robust features that cater to diverse scheduling needs.
+GeoQuiz is an educational and interactive game designed to help users learn and memorize the capitals of countries around the world. With a simple and engaging interface, GeoQuiz combines fun with learning, making geography accessible to everyone.
 
 ## Features
 
-- Add, edit, and delete events
-- View events in a daily, weekly, or monthly calendar
-- Search for events by keywords
-- Sync with external calendar services (describe which services are supported if applicable)
-- Notifications and reminders
+- Test your knowledge of world capitals in a fun quiz format.
+- Track your score and improve over multiple sessions.
+- Randomized questions ensure a fresh experience every time.
 
 ## Installation
 
