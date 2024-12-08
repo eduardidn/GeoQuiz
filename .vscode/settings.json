@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "map": "cpp",
+    "chrono": "cpp",
+    "span": "cpp"
+  }
+}

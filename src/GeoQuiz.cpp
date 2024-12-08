@@ -16,11 +16,6 @@ void GeoQuiz::startGame()
     displayWelcomeMessage();
 
     auto countries = CountryDatabase::getCountryData();
-    std::vector<std::string> countryList;
-    for (const auto &entry : countries)
-    {
-        countryList.push_back(entry.first);
-    }
 
     while (remainingTries > 0)
     {
@@ -72,7 +67,8 @@ void GeoQuiz::displayGameOver() const
 std::string GeoQuiz::getRandomCountry() const
 {
     auto countries = CountryDatabase::getCountryData();
+    // Get a random index on the contries length range
     int index = std::rand() % countries.size();
-    auto it = std::next(countries.begin(), index);
-    return it->first;
+    auto country = std::next(countries.begin(), index);
+    return country->first;
 }
